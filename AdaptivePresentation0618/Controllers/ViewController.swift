@@ -12,13 +12,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //Image Pattern
+        if let myPattern = UIImage(named: "fiveRings") {        
+            view.backgroundColor = UIColor(patternImage: myPattern)
+        }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "RedVcSegue" {
             print("Red VC")
             let controller = segue.destination as! RedVC
+            
+            //TODO: Inserting and dismissing custom subView (a dimming view) during the custom presentation
         }
         else if segue.identifier == "BlueVcSegue" {
             print("Blue VC")

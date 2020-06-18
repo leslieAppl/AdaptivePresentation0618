@@ -39,7 +39,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehh-YB-IK5">
+                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehh-YB-IK5">
                                 <rect key="frame" x="80" y="124" width="69" height="38"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
@@ -50,7 +50,7 @@
                                     <segue destination="lpB-eb-twh" kind="presentation" identifier="RedVcSegue" id="Sa8-dy-I8C"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gae-wN-um9">
+                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gae-wN-um9">
                                 <rect key="frame" x="261" y="124" width="73" height="38"/>
                                 <color key="backgroundColor" red="0.015686274510000001" green="0.6705882353" blue="0.92449144260000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="127"/>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
         <!--RedVC-->
         <scene sceneID="60f-Uk-JCO">
@@ -83,23 +83,37 @@
                     <view key="view" contentMode="scaleToFill" id="hqV-6e-BSs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sa2-A0-pPH">
+                                <rect key="frame" x="194" y="0.0" width="220" height="808"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="pd6-Xa-Rg9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DHR-AL-8Ok" firstAttribute="bottom" secondItem="Sa2-A0-pPH" secondAttribute="bottom" id="3X5-oN-fRp"/>
+                            <constraint firstItem="Sa2-A0-pPH" firstAttribute="top" secondItem="DHR-AL-8Ok" secondAttribute="top" id="ep2-fg-p8c"/>
+                            <constraint firstItem="DHR-AL-8Ok" firstAttribute="trailing" secondItem="Sa2-A0-pPH" secondAttribute="trailing" id="go0-Wn-XK6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DHR-AL-8Ok"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeF-Gc-D8z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="-53"/>
+            <point key="canvasLocation" x="853.62318840579712" y="-53.571428571428569"/>
         </scene>
         <!--BlueVC-->
         <scene sceneID="an1-MD-AUr">
             <objects>
                 <viewController id="bLQ-iT-kAw" customClass="BlueVC" customModule="AdaptivePresentation0618" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Osi-ou-RbG">
+                    <view key="view" alpha="0.90000000000000002" contentMode="scaleToFill" id="Osi-ou-RbG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-pE-3QC">
+                            <stackView opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-pE-3QC">
                                 <rect key="frame" x="74" y="291" width="266.5" height="260"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Sf2-ut-woG">
@@ -412,9 +426,10 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.6705882353" blue="0.92449144260000005" alpha="1" colorSpace="calibratedRGB"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.015686274510000001" green="0.6705882353" blue="0.92449144260000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ae8-pE-3QC" firstAttribute="centerX" secondItem="Osi-ou-RbG" secondAttribute="centerX" id="UGn-2v-PS2"/>
                             <constraint firstItem="ae8-pE-3QC" firstAttribute="centerY" secondItem="Osi-ou-RbG" secondAttribute="centerY" id="hUQ-pH-6bY"/>
