@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         if let myPattern = UIImage(named: "fiveRings") {        
             view.backgroundColor = UIColor(patternImage: myPattern)
         }
+        
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

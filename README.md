@@ -4,4 +4,14 @@
 
 ## Image Pattern
 
+## Rounded View
+
+## Rounded Rectangle | Circle Button
+
+## Gradient View
+
+## @IBDesignable
+
+## @IBInspectable
+
 

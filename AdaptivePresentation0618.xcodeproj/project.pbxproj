@@ -16,6 +16,10 @@
 		CEBBB651249B8F9D004744D4 /* RedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB650249B8F9D004744D4 /* RedVC.swift */; };
 		CEBBB653249B8FAC004744D4 /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB652249B8FAC004744D4 /* BlueVC.swift */; };
 		CEBBB655249B8FBA004744D4 /* AdaptiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB654249B8FBA004744D4 /* AdaptiveVC.swift */; };
+		CEBBB659249C5C12004744D4 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB658249C5C12004744D4 /* CircleView.swift */; };
+		CEBBB65B249C64BC004744D4 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB65A249C64BB004744D4 /* RoundedButton.swift */; };
+		CEBBB65D249C6830004744D4 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB65C249C6830004744D4 /* CircleButton.swift */; };
+		CEBBB65F249C6FDE004744D4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB65E249C6FDE004744D4 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		CEBBB650249B8F9D004744D4 /* RedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedVC.swift; sourceTree = "<group>"; };
 		CEBBB652249B8FAC004744D4 /* BlueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueVC.swift; sourceTree = "<group>"; };
 		CEBBB654249B8FBA004744D4 /* AdaptiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveVC.swift; sourceTree = "<group>"; };
+		CEBBB658249C5C12004744D4 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		CEBBB65A249C64BB004744D4 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		CEBBB65C249C6830004744D4 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		CEBBB65E249C6FDE004744D4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,8 @@
 		CEBBB63A249B8DDE004744D4 /* AdaptivePresentation0618 */ = {
 			isa = PBXGroup;
 			children = (
+				CEBBB657249C5BDC004744D4 /* Models */,
+				CEBBB656249C5BD3004744D4 /* Views */,
 				CEBBB64F249B8F80004744D4 /* Controllers */,
 				CEBBB63B249B8DDE004744D4 /* AppDelegate.swift */,
 				CEBBB63D249B8DDE004744D4 /* SceneDelegate.swift */,
@@ -82,6 +92,24 @@
 				CEBBB654249B8FBA004744D4 /* AdaptiveVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEBBB656249C5BD3004744D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEBBB658249C5C12004744D4 /* CircleView.swift */,
+				CEBBB65A249C64BB004744D4 /* RoundedButton.swift */,
+				CEBBB65C249C6830004744D4 /* CircleButton.swift */,
+				CEBBB65E249C6FDE004744D4 /* GradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEBBB657249C5BDC004744D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +185,13 @@
 			files = (
 				CEBBB655249B8FBA004744D4 /* AdaptiveVC.swift in Sources */,
 				CEBBB640249B8DDE004744D4 /* ViewController.swift in Sources */,
+				CEBBB65F249C6FDE004744D4 /* GradientView.swift in Sources */,
 				CEBBB63C249B8DDE004744D4 /* AppDelegate.swift in Sources */,
+				CEBBB65D249C6830004744D4 /* CircleButton.swift in Sources */,
+				CEBBB65B249C64BC004744D4 /* RoundedButton.swift in Sources */,
 				CEBBB651249B8F9D004744D4 /* RedVC.swift in Sources */,
 				CEBBB63E249B8DDE004744D4 /* SceneDelegate.swift in Sources */,
+				CEBBB659249C5C12004744D4 /* CircleView.swift in Sources */,
 				CEBBB653249B8FAC004744D4 /* BlueVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
