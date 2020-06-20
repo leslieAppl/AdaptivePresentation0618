@@ -74,8 +74,8 @@
                                     <constraint firstAttribute="width" constant="78" id="huX-rd-ejX"/>
                                     <constraint firstAttribute="height" constant="78" id="twj-rf-sCH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="BlueVC">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Adaptive">
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
