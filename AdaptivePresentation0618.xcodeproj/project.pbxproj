@@ -20,6 +20,8 @@
 		CEBBB65B249C64BC004744D4 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB65A249C64BB004744D4 /* RoundedButton.swift */; };
 		CEBBB65D249C6830004744D4 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB65C249C6830004744D4 /* CircleButton.swift */; };
 		CEBBB65F249C6FDE004744D4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB65E249C6FDE004744D4 /* GradientView.swift */; };
+		CEBBB662249DBF0E004744D4 /* ATypePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB661249DBF0E004744D4 /* ATypePresentationManager.swift */; };
+		CEBBB664249DBF61004744D4 /* ATypePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBB663249DBF61004744D4 /* ATypePresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		CEBBB65A249C64BB004744D4 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		CEBBB65C249C6830004744D4 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		CEBBB65E249C6FDE004744D4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CEBBB661249DBF0E004744D4 /* ATypePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATypePresentationManager.swift; sourceTree = "<group>"; };
+		CEBBB663249DBF61004744D4 /* ATypePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATypePresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 				CEBBB657249C5BDC004744D4 /* Models */,
 				CEBBB656249C5BD3004744D4 /* Views */,
 				CEBBB64F249B8F80004744D4 /* Controllers */,
+				CEBBB660249DB9C5004744D4 /* Presentations */,
 				CEBBB63B249B8DDE004744D4 /* AppDelegate.swift */,
 				CEBBB63D249B8DDE004744D4 /* SceneDelegate.swift */,
 				CEBBB641249B8DDE004744D4 /* Main.storyboard */,
@@ -110,6 +115,15 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CEBBB660249DB9C5004744D4 /* Presentations */ = {
+			isa = PBXGroup;
+			children = (
+				CEBBB661249DBF0E004744D4 /* ATypePresentationManager.swift */,
+				CEBBB663249DBF61004744D4 /* ATypePresentationController.swift */,
+			);
+			path = Presentations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,10 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBBB662249DBF0E004744D4 /* ATypePresentationManager.swift in Sources */,
 				CEBBB655249B8FBA004744D4 /* AdaptiveVC.swift in Sources */,
 				CEBBB640249B8DDE004744D4 /* ViewController.swift in Sources */,
 				CEBBB65F249C6FDE004744D4 /* GradientView.swift in Sources */,
 				CEBBB63C249B8DDE004744D4 /* AppDelegate.swift in Sources */,
+				CEBBB664249DBF61004744D4 /* ATypePresentationController.swift in Sources */,
 				CEBBB65D249C6830004744D4 /* CircleButton.swift in Sources */,
 				CEBBB65B249C64BC004744D4 /* RoundedButton.swift in Sources */,
 				CEBBB651249B8F9D004744D4 /* RedVC.swift in Sources */,

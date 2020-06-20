@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    lazy var aTypeTransitioningDelegate = ATypePresentationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +26,10 @@ class ViewController: UIViewController {
         if segue.identifier == "RedVcSegue" {
             print("Red VC")
             let controller = segue.destination as! RedVC
+                        
+            //TODO: Resizing the presented view
+            controller.transitioningDelegate = aTypeTransitioningDelegate
+            controller.modalPresentationStyle = .custom
             
             //TODO: Inserting and dismissing custom subView (a dimming view) during the custom presentation
         }

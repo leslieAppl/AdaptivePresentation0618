@@ -14,4 +14,4 @@
 
 ## @IBInspectable
 
-
+## Allocating subView to its superView’s center
