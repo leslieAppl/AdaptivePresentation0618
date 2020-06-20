@@ -17,3 +17,5 @@
 ## Resizing and re-allocating presented view
 
 ## Centering subView to its superView
+
+## Inserting and dismissing subView (a dimming view) during the custom presentation

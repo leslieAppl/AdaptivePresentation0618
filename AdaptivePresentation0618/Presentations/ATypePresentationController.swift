@@ -10,6 +10,8 @@ import UIKit
 
 class ATypePresentationController: UIPresentationController {
     
+    private var dimmingView: UIView!
+    
     ///Resizing and re-allocating presented view
     override var frameOfPresentedViewInContainerView: CGRect {
         var frame: CGRect = .zero
@@ -28,12 +30,33 @@ class ATypePresentationController: UIPresentationController {
     
     ///Adding dimming view
     override func presentationTransitionWillBegin() {
+        guard let dimmingView = self.dimmingView else { return }
+        containerView?.addSubview(dimmingView)
+        
+        dimmingView.topAnchor.constraint(equalTo: containerView!.topAnchor).isActive = true
+        dimmingView.bottomAnchor.constraint(equalTo: containerView!.bottomAnchor).isActive = true
+        dimmingView.leadingAnchor.constraint(equalTo: containerView!.leadingAnchor).isActive = true
+        dimmingView.trailingAnchor.constraint(equalTo: containerView!.trailingAnchor).isActive = true
+        
+        guard let coordinator = presentedViewController.transitionCoordinator else {
+            dimmingView.alpha = 1.0
+            return
+        }
+        coordinator.animate(alongsideTransition: { _ in
+        dimmingView.alpha = 1.0
+        })
         
     }
     
     ///dismissing dimming view
     override func dismissalTransitionWillBegin() {
-        
+        guard let coordinator = presentedViewController.transitionCoordinator else {
+            self.dimmingView.alpha = 0.0
+            return
+        }
+        coordinator.animate(alongsideTransition: { (_) in
+            self.dimmingView.alpha = 0.0
+        }, completion: nil)
     }
     
     override func containerViewWillLayoutSubviews() {
@@ -52,5 +75,9 @@ class ATypePresentationController: UIPresentationController {
 extension ATypePresentationController {
     func setupDimmingView() {
         print("Setting up Dimming View")
+        dimmingView = UIView()
+        dimmingView.translatesAutoresizingMaskIntoConstraints = false
+        dimmingView.backgroundColor = UIColor(white: 0.0, alpha: 0.5)
+        dimmingView.alpha = 0.0
     }
 }
