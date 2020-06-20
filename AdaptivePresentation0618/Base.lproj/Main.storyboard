@@ -90,6 +90,16 @@
                                     <constraint firstAttribute="width" constant="128" id="rJH-if-lJa"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Circle UIView" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uv-h1-FMk">
+                                <rect key="frame" x="153.5" y="425" width="107" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="2DT-ZM-8Z4"/>
+                                    <constraint firstAttribute="width" constant="107" id="9JN-Mz-5g6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -99,6 +109,8 @@
                             <constraint firstItem="Ehh-YB-IK5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="RuJ-ak-sxt"/>
                             <constraint firstItem="gae-wN-um9" firstAttribute="centerY" secondItem="Ehh-YB-IK5" secondAttribute="centerY" id="TAA-eA-STI"/>
                             <constraint firstItem="Uw3-7n-RNF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mfJ-sh-4Dk"/>
+                            <constraint firstItem="7uv-h1-FMk" firstAttribute="centerX" secondItem="Uw3-7n-RNF" secondAttribute="centerX" id="oXb-ie-2vZ"/>
+                            <constraint firstItem="7uv-h1-FMk" firstAttribute="centerY" secondItem="Uw3-7n-RNF" secondAttribute="centerY" id="xJV-pN-ijU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
