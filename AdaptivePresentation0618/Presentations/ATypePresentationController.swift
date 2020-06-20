@@ -10,7 +10,7 @@ import UIKit
 
 class ATypePresentationController: UIPresentationController {
     
-    private var isThis: Bool = false
+//    private var isThis: Bool = false
     
     override var frameOfPresentedViewInContainerView: CGRect {
         var frame: CGRect = .zero
@@ -21,10 +21,6 @@ class ATypePresentationController: UIPresentationController {
         return frame
     }
     
-    init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?, isThis: Bool) {
-        super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
-    }
-    
     override func containerViewWillLayoutSubviews() {
         presentedView?.frame = frameOfPresentedViewInContainerView
         
@@ -32,6 +28,6 @@ class ATypePresentationController: UIPresentationController {
     }
     
     override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
-        return CGSize(width: parentSize.width*(2.0/3.0), height: parentSize.height*(1.0/3.0))
+        return CGSize(width: parentSize.width*(2.0/3.0), height: parentSize.height*(2.0/3.0))
     }
 }

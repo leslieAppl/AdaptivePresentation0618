@@ -17,7 +17,7 @@ extension ATypePresentationManager: UIViewControllerTransitioningDelegate {
     //Hooking up Presentation Controller
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         
-        let presentationController = ATypePresentationController(presentedViewController: presented, presenting: presenting, isThis: false)
+        let presentationController = ATypePresentationController(presentedViewController: presented, presenting: presenting)
         
         return presentationController
     }
