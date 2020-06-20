@@ -9,7 +9,7 @@
 import UIKit
 
 class ATypePresentationManager: NSObject {
-
+    
 }
 
 extension ATypePresentationManager: UIViewControllerTransitioningDelegate {
